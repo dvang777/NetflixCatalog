@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace NetflixCatalog
 {
-    class View
+    public class View
     {
+        public void view()
+        {
+            Console.WriteLine();
+        }
     }
 }

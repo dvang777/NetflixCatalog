@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace NetflixCatalog
 {
-    class Episode
+    public class Episode
     {
-        string rating;
+        public int? rating;
     }
 }

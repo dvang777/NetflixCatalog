@@ -10,11 +10,20 @@ namespace NetflixCatalog
     {
         static void Main(string[] args)
         {
-            Genre comedy = new Genre();
-            comedy.someList.Add("Anchorman");
-            comedy.name = "Comedy";
-            Genre romance = new Genre();
-            Genre RomanticComedy = romance + comedy;
+            Comedy comedy = new Comedy();
+            Genre Comedy = new Genre();
+            Movie Anchorman = new Movie();
+            Anchorman.name = "Anchorman";
+            Anchorman.rating = 4;
+            Anchorman.duration = 94;
+
+
+
+
+            
+
+            
+
 
         }
     }

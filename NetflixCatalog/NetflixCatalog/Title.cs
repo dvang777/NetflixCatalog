@@ -8,8 +8,8 @@ namespace NetflixCatalog
 {
     public abstract class Title
     {
-        string name;
-        int? rating;
+        public string name;
+        public int? rating;
 
         public Title(string name, int rating)
         {

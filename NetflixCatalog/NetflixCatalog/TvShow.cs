@@ -9,10 +9,9 @@ namespace NetflixCatalog
     public class TvShow : Title
     {
         List<Episode> Episodes;
-        int amount;
-        int AvgRating;
-        string name;
-        int numberOfEpisodes;
+        public int amount;
+        public int AvgRating;
+        public int? numberOfEpisodes;
 
 
         public new int rating

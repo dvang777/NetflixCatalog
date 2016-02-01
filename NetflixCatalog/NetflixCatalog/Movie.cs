@@ -8,8 +8,8 @@ namespace NetflixCatalog
 {
     class Movie : Title
     {
-        int duration;
-        public string ToString(string name, int duration)
+        public int? duration;
+        public override string ToString()
         {
             return name + duration;
         }

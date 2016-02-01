@@ -11,32 +11,22 @@ namespace NetflixCatalog
     {
         public IEnumerator GetEnumerator()
         {
-            yield return "";
+            yield return title ;
         }
-        public List<Title> someList;
+        public List<Title> title;
         public static Genre operator +(Genre genre1, Genre genre2)
         {
             Genre newGenre = new Genre();
-            newGenre.someList.AddRange(genre1.someList);
-            newGenre.someList.AddRange(genre2.someList);
+            newGenre.title.AddRange(genre1.title);
+            newGenre.title.AddRange(genre2.title);
             return newGenre;
         }
-        public static Genre operator +(Genre newGenre, Genre title)
+        public static Genre operator +(Genre newGenre, Title title)
         {
-            Genre  newGenreTitle = new Genre();
-            newGenreTitle.someList.AddRange(newGenreTitle.someList);
-            newGenreTitle.someList.AddRange(title.someList);
+            Genre newGenreTitle = new Genre();
+            newGenreTitle.title.AddRange(newGenreTitle.title);
+            newGenreTitle.title.Add(title);
             return newGenreTitle;
         }
-
-
-
-
-
-
-    }
-
-    class GenreTitle
-    {
     }
 }
