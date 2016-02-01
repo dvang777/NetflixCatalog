@@ -8,10 +8,10 @@ namespace NetflixCatalog
 {
     public class TvShow : Title
     {
-        List<Episode> Episodes;
+        public List<Episode> Episodes;
         public int amount;
         public int AvgRating;
-        public int? numberOfEpisodes;
+        public int numberOfEpisodes;
 
 
         public new int rating
@@ -22,8 +22,11 @@ namespace NetflixCatalog
             }
             set
             {
-                amount = rating * Episodes.Count;
-                AvgRating = amount / Episodes.Count;
+                foreach(Episode Episodes in Episodes)
+                {
+                    amount = rating++;
+                }
+                  AvgRating = amount / Episodes.Count;  
             }
         }
         public override string ToString()
